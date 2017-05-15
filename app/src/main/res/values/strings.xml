@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ping Pong Score Card</string>
+    <string name="app_intro">Tutorial</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="server_1">Server: P1</string>
+    <string name="server_2">Server: P2</string>
+    <string name="reset_score">RESET SCORE</string>
+    <string name="reset_set">RESET SET</string>
+    <string name="mode_1">To 21</string>
+    <string name="mode_2">To 11</string>
+    <string name="decrement_score">Score - 1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

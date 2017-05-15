@@ -1,0 +1,5 @@
+0       //scoreLeft
+0       //scoreRight
+0       //winsLeft
+0       //winsRight
+1       //currently serving (1 = left, 2 = right)

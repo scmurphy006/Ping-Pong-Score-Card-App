@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="12dp"
+    tools:context="com.outspicy.pingpongscorecard.MainActivity"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryDark">
+
+   <LinearLayout
+       android:id="@+id/score_left"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="4"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:id="@+id/text_left"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:text=""
+           android:textSize="25sp"
+           android:textColor="@color/colorLeft"
+           android:padding="5dp"
+           android:background="@color/colorServe"
+           android:layout_weight="1.5"
+           tools:text="@string/player_1" />
+           <!---->
+
+       <Button
+           android:id="@+id/button_score_left"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:text=""
+           tools:text="0"
+           android:textSize="@dimen/default_text_size"
+           android:onClick="incrementScoreLeft"
+           android:layout_weight="7.00"
+
+           />
+           <!---->
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="0dp"
+           android:text="@string/decrement_score"
+           android:textSize="12sp"
+           android:onClick="decrementScoreLeft"
+           android:layout_gravity="start"
+           android:layout_weight="1.5"
+           />
+           <!---->
+
+   </LinearLayout>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_toggle_serve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ToggleButton
+            android:id="@+id/toggle_serve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="@string/server_1"
+            android:textOn="@string/server_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_score"
+            android:onClick="resetGame" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_set"
+            android:onClick="resetSet"/>
+
+        <ToggleButton
+            android:id="@+id/toggle_game_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="@string/mode_1"
+            android:textOn="@string/mode_2" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text=""
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:textColor="@color/colorRight"
+            tools:text="@string/player_1"/>
+
+        <Button
+            android:id="@+id/button_score_right"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.00"
+            android:text=""
+            tools:text="0"
+            android:gravity="center"
+            android:textSize="@dimen/default_text_size"
+            android:onClick="incrementScoreRight"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="@string/decrement_score"
+            android:textSize="12sp"
+            android:onClick="decrementScoreRight"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>
